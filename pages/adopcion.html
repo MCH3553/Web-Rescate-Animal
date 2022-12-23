@@ -1,0 +1,282 @@
+<!-- <!DOCTYPE html> -->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Styles -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Adopta y dales un hogar</title>
+	</head>
+	<body class="body">
+		<header>
+		<div><a href="../index.html"><img src="../img/fructuosoheader.png" class="headerlogo"></a></div>
+			 <input type="checkbox" id="opciones">
+			<label for="opciones"><img src="../img/options.png" class="imgopciones"></label>
+			<nav class="menu">
+			<ul class="listOfItemsNavBar">
+				<li class="itemNavBar"><a href="../index.html">Inicio</a></li>
+				<li class="itemNavBar">
+					<a href="adopcion.html">Adopción</a>
+				</li>
+				<li class="itemNavBar">
+					<a href="colaborar.html">Colaborar</a>
+				</li>
+				<li class="itemNavBar">
+					<a href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="carrousel">
+		<ul>
+		  <li><img src= "../img/imgslide1.jpg"></li>
+		  <li><img src= "../img/imgslide2.jpg"></li>
+		  <li> <img src= "../img/imgslide3.jpg"></li>
+		  <li><img src= "../img/imgslide4.jpg"></li>
+		</ul>
+		</div>
+		<main class="main">
+			<div
+				class="modal fade"
+				id="adopcionModal"
+				tabindex="-1"
+				aria-labelledby="ModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title fs-5" id="ModalLabel">
+								Formulario de Adopción
+							</h2>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<form action="" id="datosAdopcion" name="datosAdopcion">
+								<div class="container">
+									<div class="formAdopcionBlockOne row">
+										<div class="input-group mb-2">
+											<span
+												class="input-group-text"
+												id="identificador"
+												>ID</span
+											>
+											<input
+												type="number"
+												class="form-control"
+												placeholder="Ingrese el ID"
+												aria-label="identificador"
+												aria-describedby="identificador"
+												name="ID"
+												required
+											/>
+										</div>
+										<div class="input-group mb-2">
+											<span
+												class="input-group-text"
+												id="nombreCompleto"
+												>Nombre Completo</span
+											>
+											<input
+												type="text"
+												class="form-control"
+												placeholder="Ingrese su nombre completo"
+												aria-label="nombreCompleto"
+												aria-describedby="nombreCompleto"
+												name="nombreCompleto"
+												required
+											/>
+										</div>
+										<div class="input-group mb-2">
+											<span class="input-group-text" id="telefono"
+												>Teléfono</span
+											>
+											<input
+												type="tel"
+												class="form-control"
+												placeholder="Ingrese su teléfono"
+												aria-label="telefono"
+												aria-describedby="telefono"
+												name="telefono"
+												required
+											/>
+										</div>
+										<div class="input-group mb-2">
+											<span class="input-group-text" id="barrio"
+												>Barrio</span
+											>
+											<input
+												type="text"
+												class="form-control"
+												placeholder="Ingrese su barrio"
+												aria-label="barrio"
+												aria-describedby="barrio"
+												name="barrio"
+												required
+											/>
+										</div>
+									</div>
+									<div class="input-group mb-2">
+										<label class="input-group-text" for="tipoDeVivienda"
+											>Tipo de vivienda</label
+										>
+										<select
+											class="form-select"
+											id="tipoDeVivienda"
+											name="tipoDeVivienda"
+											required
+										>
+											<option selected>
+												Elija el tipo de vivienda
+											</option>
+											<option value="Departamento con red">Vivo en un departamento con red</option>
+											<option value="Casa con red">Vivo en una casa con tapia y red</option>
+											<option value="Departamento sin red">Vivo en un departamento sin red</option>
+											<option value="Casa sin red">Vivo en una casa con tapia sin red</option>
+										</select>
+									</div>
+									
+									<div class="formAdopcionBlockThree row">
+										<div class="input-group mb-2">
+											<span class="input-group-text" id="email"
+												>Correo</span
+											>
+											<input
+												type="email"
+												class="form-control datosAd"
+												placeholder="Ingrese su correo"
+												aria-label="email"
+												aria-describedby="email"
+												name="email"
+												required
+											/>
+										</div>
+										<div class="input-group mb-2">
+											<label class="input-group-text" for="redSocial"
+												>Redes Sociales</label
+											>
+											<select
+												class="form-select datosAd"
+												id="redSocial"
+												name="redSocial"
+												required
+											>
+												<option selected>
+													Elija su red social más utilizada
+												</option>
+												<option value="Instagram">Instagram</option>
+												<option value="Facebook">Facebook</option>
+												<option value="Twitter">Twitter</option>
+											</select>
+										</div>
+										<div class="input-group mb-2">
+											<span
+												class="input-group-text"
+												id="usuarioRedSocial"
+												>Usuario</span
+											>
+											<input
+												type="text"
+												class="form-control datosAd"
+												placeholder="Ingrese el usuario de la red social elegida"
+												aria-label="usuarioRedSocial"
+												aria-describedby="usuarioRedSocial"
+												name="usuarioRedSocial"
+												required
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="">
+									<button
+										class="btn btn-primary"
+										id="enviarFormAdopcion"
+										type="submit"
+									>
+										Envíar solicitud
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary "
+								id="cerrarModal"
+								data-bs-dismiss="modal"
+							>
+								Cerrar
+							</button>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="titleOfMain">Adoptame</h2>
+			<div class="container">
+				<div class="paragraphAdopcion row" id="contenedor"></div>
+			</div>
+		</main>
+		<footer class="piedepagina">
+   
+			<div class="grupo1">
+			  
+			  <div class="box"> 
+				<figure> 
+					<a href="#">
+						 <img src="../img/imgfructuoso.png" alt="logo" class="imgfooter">
+					</a>
+				  </figure>
+			  </div>
+		  
+			  <div class="box">
+			  <h2>Sobre Nosotros</h2>
+			  <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, veritatis</p> </div>
+			  
+				<div class="box"> <h2> Siguenos</h2>
+				<div class="redsocial"> 
+				  <a href="https://www.facebook.com/" class="fa fa-facebook"><img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png
+				  "class="imgredsocial"></a>
+				  <a href="https://www.instagram.com/" class="fa fa-instagram"> <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" class="imgredsocial"></a>
+				  <a href="https://twitter.com/?lang=es" class="fa fa-twitter"> <img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-6.png" class="imgredsocial"></a>
+				  <a href="https://www.youtube.com/" class="fa fa-youtube"><img src="https://cdn-icons-png.flaticon.com/512/174/174883.png"></a>
+				</div>
+				</div>
+				</div>
+				
+				  <div class="grupo2">
+					<small>&copy;2022 <b>Fructuoso Rescate Animal</b> - Todos los Derechos Reservados</small>
+		  
+				</div>
+			</footer>
+
+		<!-- JS Files -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="../js/renderCandidatos.js"></script>
+		<script src="../js/appFormularioAdopcion.js"></script>
+	</body>
+</html>
