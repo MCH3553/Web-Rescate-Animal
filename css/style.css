@@ -332,7 +332,7 @@ header label:hover {
 		}
 	
 		.caja__card.cc__1 {
-			background: linear-gradient(-229deg, #0093E9, #80D0C7);
+			background: linear-gradient(-229deg, #0093E9, #4ab353);
 			-webkit-animation-delay: -14s;
 			-moz-animation-delay: -14s;
 		}
@@ -346,13 +346,13 @@ header label:hover {
 	
 		.caja__card.cc__3 {
 	
-			background: linear-gradient(-229deg, #50d990, #d4d054);
+			background: linear-gradient(-229deg, #50d990, #dbd02e);
 			-webkit-animation-delay: -6s;
 			-moz-animation-delay: -6s;
 		}
 	
 		.caja__card.cc__4 {
-			background: linear-gradient(-229deg, #cf91ff, #5782F5);
+			background: linear-gradient(-229deg, #cf91ff, #e27f21);
 			-webkit-animation-delay: -2s;
 			-moz-animation-delay: -2s;
 		}
