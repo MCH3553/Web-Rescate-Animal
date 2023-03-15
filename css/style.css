@@ -234,10 +234,9 @@ header label:hover {
 	#textocolaborar {margin: 1em;}
 
 	.sorteos .titleOfMain {margin-top: 3em;}
-
+	.paragraphColaborar {width: 30%;}
 	.paragraphColaborar p {border: 3px solid white; border-radius: 15px; margin-right: 1em; padding: 5px; background: rgba(70, 70, 70, 0.5);}
 
-	
 	@-webkit-keyframes carrouseltatoo {
 		from {
 			-webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
