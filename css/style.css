@@ -44,14 +44,14 @@ header {
 header label {
 	display: none;
 	width: 68px;
-	height: 68px;
+	height: 50px;
 	cursor: pointer;
 }
 
 .imgopciones {
 	width: 30px;
 	height: 30px;
-	margin: 17px 17px;
+	margin: 11px 17px;
 }
 
 header label:hover {
@@ -234,8 +234,7 @@ header label:hover {
 	#textocolaborar {margin: 1em;}
 
 	.sorteos .titleOfMain {margin-top: 3em;}
-	.paragraphColaborar {width: 30%;}
-	.paragraphColaborar p {border: 3px solid white; border-radius: 15px; margin-right: 1em; padding: 5px; background: rgba(120, 129, 153, 0.7);}
+	.paragraphColaborar p {border: 3px solid white; border-radius: 15px; padding: 5px; background: rgba(120, 129, 153, 0.7);}
 
 	@-webkit-keyframes carrouseltatoo {
 		from {
@@ -347,7 +346,7 @@ header label:hover {
 
 
 		.carrouseltatoomod {
-			-webkit-perspective: 250px;
+			-webkit-perspective: 300px;
 			-moz-perspective: 250px;
 			width: 340px;
 			height: 200px;
@@ -454,6 +453,7 @@ textarea{
 
 #textocolaborar { margin-top: 5em;}
 #titulocolaborar { position: absolute; right: 0;}
+.paragraphColaborar {width: 335px}
 
 
 @media screen and (max-width: 1080px){
@@ -467,6 +467,7 @@ textarea{
 
 	.contact-box{
 		width: 70%; height: 750px;}
+
 }
 
 
@@ -476,10 +477,10 @@ textarea{
 	}
 	.menu {
 		position: absolute;
-		background: rgba(120, 129, 153, 0.75);
+		background: rgba(120, 129, 153, 0.95);
 		width: 70%;
 		margin-left: -70%;
-		transition: all 0.5s;
+		transition: all 0.5s; z-index: 1;
 	}
 	.menu ul {
 		flex-direction: column;
@@ -566,4 +567,5 @@ textarea{
 		justify-content: center;
 		margin: auto;
 	}
+
 }
