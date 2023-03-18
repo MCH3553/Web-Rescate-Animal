@@ -561,8 +561,8 @@ textarea{
 		color: white;
 		display: flex;
 		padding: 0px 0px;
-		height: 150px;
-		width: 400px;
+		height: auto;
+		width: 240px;
 		justify-content: center;
 		margin: auto;
 	}
